@@ -1,0 +1,263 @@
+/* Bootstrap Custom Overrides for BrewCraft */
+
+/* Custom Bootstrap Variables Override */
+.btn {
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 12px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 0.75rem;
+}
+
+.btn-lg {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-font-size: 1.1rem;
+  --bs-btn-border-radius: 16px;
+}
+
+.btn-sm {
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 0.9rem;
+  --bs-btn-border-radius: 8px;
+}
+
+/* Custom Bootstrap Colors */
+.btn-primary {
+  --bs-btn-bg: #8B4513;
+  --bs-btn-border-color: #8B4513;
+  --bs-btn-hover-bg: #2c1810;
+  --bs-btn-hover-border-color: #2c1810;
+  --bs-btn-focus-shadow-rgb: 139, 69, 19;
+  --bs-btn-active-bg: #2c1810;
+  --bs-btn-active-border-color: #2c1810;
+}
+
+.btn-success {
+  --bs-btn-bg: #28a745;
+  --bs-btn-border-color: #28a745;
+  --bs-btn-hover-bg: #218838;
+  --bs-btn-hover-border-color: #1e7e34;
+  --bs-btn-focus-shadow-rgb: 40, 167, 69;
+  --bs-btn-active-bg: #1e7e34;
+  --bs-btn-active-border-color: #1c7430;
+}
+
+.btn-warning {
+  --bs-btn-bg: #ffc107;
+  --bs-btn-border-color: #ffc107;
+  --bs-btn-hover-bg: #e0a800;
+  --bs-btn-hover-border-color: #d39e00;
+  --bs-btn-focus-shadow-rgb: 255, 193, 7;
+  --bs-btn-active-bg: #d39e00;
+  --bs-btn-active-border-color: #c69500;
+  --bs-btn-color: #000;
+  --bs-btn-hover-color: #000;
+  --bs-btn-active-color: #000;
+}
+
+.btn-danger {
+  --bs-btn-bg: #dc3545;
+  --bs-btn-border-color: #dc3545;
+  --bs-btn-hover-bg: #c82333;
+  --bs-btn-hover-border-color: #bd2130;
+  --bs-btn-focus-shadow-rgb: 220, 53, 69;
+  --bs-btn-active-bg: #bd2130;
+  --bs-btn-active-border-color: #b21f2d;
+}
+
+/* Form Controls */
+.form-control {
+  border-width: 2px;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #FF8C00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+}
+
+.form-select {
+  border-width: 2px;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
+.form-select:focus {
+  border-color: #FF8C00;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.25);
+}
+
+/* Cards */
+.card {
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 20px 20px 0 0 !important;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+  border-radius: 8px;
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+  color: #8B4513;
+}
+
+/* Tables */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table thead th {
+  background-color: #8B4513;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+}
+
+/* Badges */
+.badge {
+  font-weight: 600;
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+}
+
+/* Alert */
+.alert {
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+}
+
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #721c24;
+}
+
+.alert-warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #856404;
+}
+
+.alert-info {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #055160;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 20px 20px 0 0;
+}
+
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Progress */
+.progress {
+  border-radius: 8px;
+  height: 8px;
+}
+
+.progress-bar {
+  background-color: #FF8C00;
+}
+
+/* Pagination */
+.pagination .page-link {
+  border-radius: 8px;
+  margin: 0 0.125rem;
+  color: #8B4513;
+  border: 2px solid #e9ecef;
+  padding: 0.5rem 0.75rem;
+}
+
+.pagination .page-link:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+  border-color: #8B4513;
+  color: #8B4513;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #8B4513;
+  border-color: #8B4513;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(139, 69, 19, 0.1);
+  color: #8B4513;
+}
+
+/* Toast */
+.toast {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 12px 12px 0 0;
+}
